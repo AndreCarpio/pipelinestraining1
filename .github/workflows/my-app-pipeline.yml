@@ -17,3 +17,18 @@ jobs:
         run: |
           echo Hello, world!
           dir
+  test:
+    runs-on: self-hosted
+    steps:
+      - name: first step test
+        run: echo "Runing test"
+  publish:
+    runs-on: self-hosted
+    steps:
+      - name: first step pusblish
+        run: echo "Runing pusblish"
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: first step deploy
+        run: echo "Runing deploy"
