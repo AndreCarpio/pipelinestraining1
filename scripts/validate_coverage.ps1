@@ -1,4 +1,4 @@
-$xmlFilePath = "..\myApp.Tests\reports\coverage.cobertura.xml"
+$xmlFilePath = ".\myApp.Tests\reports\coverage.cobertura.xml"
 
 # Read the XML file content
 $xmlContent = Get-Content -Path $xmlFilePath -Raw
