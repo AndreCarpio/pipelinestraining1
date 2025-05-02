@@ -7,23 +7,30 @@ on:
     branches: ["main"]
   workflow_dispatch:
 
+env:
+  $DOTNET_TOOLS_PATH: C:\Users\Lenovo\Desktop\tools-practice2
+
 jobs:
   build:
     runs-on: self-hosted
     steps:
-      - name: Adding Repo
+      - name: Adding Repository
         uses: actions/checkout@v4
       - name: build command
-        run: |
-          dotnet build
+        run: dotnet build
+      - name: Check the repository files
+        run: dir
+
   test:
     runs-on: self-hosted
     needs: build
     steps:
-      - name: first step test
-        run: |
-          echo "Runing test"
-          dir
+      - name: Check the repository files
+        run: dir
+      - name: Code inspection - Creating report
+        run: $DOTNET_TOOLS_PATH/jb.exe inspectcode ./TrainProject.sln --o=./myApp/reports/report -f="xml"
+      - name: Code inspection validation
+        run: .\scripts\validate_report.ps1
   publish:
     runs-on: self-hosted
     needs: test
