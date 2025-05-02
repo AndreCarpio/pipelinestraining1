@@ -48,13 +48,12 @@ jobs:
         run: |
           cd .\myApp.Tests\
           & "$env:DOTNET_TOOLS_PATH\reportgenerator.exe" -reports:.\reports\coverage.cobertura.xml -targetdir:.\reports\coveragereport
-          cat .\reports\coveragereport\index.html
           cd ..
       - name: Archive code coverage report
         uses: actions/upload-artifact@v4
         with:
           name: code-coverage-report
-          path: .\myApp.Tests\reports\coveragereport\index.html
+          path: .\myApp.Tests\reports\coveragereport\
   publish:
     runs-on: self-hosted
     needs: test
