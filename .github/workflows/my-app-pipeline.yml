@@ -11,12 +11,11 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
-      - name: Get Repo
+      - name: Adding Repo
         uses: actions/checkout@v4
-      - name: Run a one-line script
+      - name: build command
         run: |
-          echo Hello, world!
-          dir
+          dotnet build
   test:
     runs-on: self-hosted
     steps:
