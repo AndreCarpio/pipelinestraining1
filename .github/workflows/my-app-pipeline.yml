@@ -18,16 +18,21 @@ jobs:
           dotnet build
   test:
     runs-on: self-hosted
+    needs: build
     steps:
       - name: first step test
-        run: echo "Runing test"
+        run: |
+          echo "Runing test"
+          dir
   publish:
     runs-on: self-hosted
+    needs: test
     steps:
       - name: first step pusblish
         run: echo "Runing pusblish"
   deploy:
     runs-on: self-hosted
+    needs: publish
     steps:
       - name: first step deploy
         run: echo "Runing deploy"
