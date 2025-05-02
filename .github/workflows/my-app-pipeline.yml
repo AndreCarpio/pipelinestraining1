@@ -21,7 +21,7 @@ jobs:
           dotnet build
           cd .\myApp\
           dotnet run
-          cd .\myApp\
+          cd ..
 
       - name: Check the repository files
         run: dir
