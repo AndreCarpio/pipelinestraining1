@@ -19,7 +19,9 @@ jobs:
       - name: build command
         run: |
           dotnet build
+          cd .\myApp\
           dotnet run
+          cd .\myApp\
 
       - name: Check the repository files
         run: dir
