@@ -37,6 +37,14 @@ jobs:
           cd .\myApp.Tests\
           dotnet test -p:CollectCoverage=true -p:CoverletOutputFormat=cobertura -p:CoverletOutput=reports/coverage
           cd ..
+      - name: Code Coverage validation
+        run: .\scripts\validate_coverage.ps1
+      - name: Unit tests report generation
+        run: |
+          cd .\myApp.Tests\
+          & "$env:DOTNET_TOOLS_PATH\reportgenerator.exe" -reports:.\reports\coverage.cobertura.xml -targetdir:.\reports\coveragereport
+          cat .\reports\coveragereport\index.html
+          cd ..
   publish:
     runs-on: self-hosted
     needs: test
