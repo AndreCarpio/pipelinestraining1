@@ -67,4 +67,4 @@ jobs:
     needs: publish
     steps:
       - name: first step deploy
-        run: echo "Runing deploy"
+        run: ./myApp/bin/Release/netcoreapp8/myApp
