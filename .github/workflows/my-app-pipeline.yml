@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  $DOTNET_TOOLS_PATH: C:\Users\Lenovo\Desktop\tools-practice2
+  DOTNET_TOOLS_PATH: C:\Users\Lenovo\Desktop\tools-practice2
 
 jobs:
   build:
@@ -28,7 +28,7 @@ jobs:
       - name: Check the repository files
         run: dir
       - name: Code inspection - Creating report
-        run: $DOTNET_TOOLS_PATH/jb.exe inspectcode ./TrainProject.sln --o=./myApp/reports/report -f="xml"
+        run: &"$env:DOTNET_TOOLS_PATH\jb.exe" inspectcode ./TrainProject.sln --o=./myApp/reports/report -f="xml"
       - name: Code inspection validation
         run: .\scripts\validate_report.ps1
   publish:
