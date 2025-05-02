@@ -32,6 +32,11 @@ jobs:
           & "$env:DOTNET_TOOLS_PATH\jb.exe" inspectcode ./TrainProject.sln --o=./myApp/reports/report -f="xml"
       - name: Code inspection validation
         run: .\scripts\validate_report.ps1
+      - name: Unit tests and code coverage
+        run: |
+          cd .\myApp.Tests\
+          dotnet test -p:CollectCoverage=true -p:CoverletOutputFormat=cobertura -p:CoverletOutput=reports/coverage
+          cd ..
   publish:
     runs-on: self-hosted
     needs: test
