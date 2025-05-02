@@ -28,7 +28,8 @@ jobs:
       - name: Check the repository files
         run: dir
       - name: Code inspection - Creating report
-        run: &"$env:DOTNET_TOOLS_PATH\jb.exe" inspectcode ./TrainProject.sln --o=./myApp/reports/report -f="xml"
+        run: |
+          & "$env:DOTNET_TOOLS_PATH\jb.exe" inspectcode ./TrainProject.sln --o=./myApp/reports/report -f="xml"
       - name: Code inspection validation
         run: .\scripts\validate_report.ps1
   publish:
