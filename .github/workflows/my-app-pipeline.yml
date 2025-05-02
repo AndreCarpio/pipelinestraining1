@@ -59,7 +59,9 @@ jobs:
     needs: test
     steps:
       - name: publich app
-        run: dotnet publish
+        run: |
+          dotnet publish
+          ./myApp/bin/Release/netcoreapp8/myApp
   deploy:
     runs-on: self-hosted
     needs: publish
