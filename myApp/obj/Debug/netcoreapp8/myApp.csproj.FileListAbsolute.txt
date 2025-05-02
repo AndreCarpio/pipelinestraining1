@@ -1,0 +1,17 @@
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\bin\Debug\netcoreapp8\myApp.exe
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\bin\Debug\netcoreapp8\myApp.deps.json
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\bin\Debug\netcoreapp8\myApp.runtimeconfig.json
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\bin\Debug\netcoreapp8\myApp.dll
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\bin\Debug\netcoreapp8\myApp.pdb
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\bin\Debug\netcoreapp8\Figgle.dll
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\obj\Debug\netcoreapp8\myApp.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\obj\Debug\netcoreapp8\myApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\obj\Debug\netcoreapp8\myApp.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\obj\Debug\netcoreapp8\myApp.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\obj\Debug\netcoreapp8\myApp.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\obj\Debug\netcoreapp8\myApp.csproj.Up2Date
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\obj\Debug\netcoreapp8\myApp.dll
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\obj\Debug\netcoreapp8\refint\myApp.dll
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\obj\Debug\netcoreapp8\myApp.pdb
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\obj\Debug\netcoreapp8\myApp.genruntimeconfig.cache
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\obj\Debug\netcoreapp8\ref\myApp.dll

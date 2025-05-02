@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: ["main", "andre_dev"]
+    branches: ["andreCarpio_p1_base"]
   pull_request:
-    branches: ["main"]
+    branches: ["andreCarpio_p1_base"]
   workflow_dispatch:
 
 env:

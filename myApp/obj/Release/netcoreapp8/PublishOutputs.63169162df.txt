@@ -1,0 +1,6 @@
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\bin\Release\netcoreapp8\publish\myApp.exe
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\bin\Release\netcoreapp8\publish\myApp.dll
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\bin\Release\netcoreapp8\publish\myApp.deps.json
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\bin\Release\netcoreapp8\publish\myApp.runtimeconfig.json
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\bin\Release\netcoreapp8\publish\myApp.pdb
+C:\Users\Lenovo\Desktop\pipelinestraining1\myApp\bin\Release\netcoreapp8\publish\Figgle.dll
