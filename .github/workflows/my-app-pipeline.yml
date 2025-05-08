@@ -68,12 +68,14 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
       - name: build  Image
-        run: docker build -t myapp:1.0.0 .
-
+        run: docker build -t andrecarpio/myapp:1.0.0 .
+      - name: Push  Image
+        run: docker push andrecarpio/myapp:1.0.0
   deploy:
     runs-on: self-hosted
     needs: publish
     steps:
       - name: deploy App
         run: |
-          docker run --rm myapp:1.0.0
+          docker pull andrecarpio/myapp:1.0.0
+          docker run --rm andrecarpio/myapp:1.0.0
